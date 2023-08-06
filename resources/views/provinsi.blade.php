@@ -9,7 +9,7 @@
 <body>
 
 <h1>Pilih Provinsi dan Kota</h1>
-
+{{-- mark --}}
 
   <form method="POST" action="{{ route('daftar') }}">
     @csrf

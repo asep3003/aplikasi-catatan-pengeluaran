@@ -28,13 +28,14 @@ Route::get('/', function () {
     return view('provinsi');
 });
 
+// mark
 Route::post('/daftar', [CatatanController::class, 'daftar'])->name('daftar');
 
 Route::get('/provinsi', [CatatanController::class, 'provinsi']);
 Route::get('/kota/{provinsiId}', [CatatanController::class, 'kota']);
 Route::get('/kecamatan/{kotaId}', [CatatanController::class, 'kecamatan']);
 Route::get('/kelurahan/{kecamatanId}', [CatatanController::class, 'kelurahan']);
-
+// end mark
 
 
 # ------ Authenticated routes ------ #

@@ -21,6 +21,7 @@ class CatatanController extends Controller
     }
 
     function daftar(Request $request) {
+        // mark
         dd($request);
     }
 
